@@ -9,7 +9,7 @@ import top.mcmtr.mod.config.Config;
 
 public final class BlockYuuniPIDS extends BlockPIDSHorizontalBase {
     public BlockYuuniPIDS(int maxArrivals) {
-        super(maxArrivals);
+        super(maxArrivals, "ui.msd.pids_yuuni");
     }
 
     @Override
@@ -38,7 +38,7 @@ public final class BlockYuuniPIDS extends BlockPIDSHorizontalBase {
 
     public static class BlockYuuniPIDSEntity extends BlockEntityHorizontalBase {
         public BlockYuuniPIDSEntity(int maxArrivals, BlockPos pos, BlockState state) {
-            super(maxArrivals, getEntity(maxArrivals), pos, state);
+            super(maxArrivals, "", getEntity(maxArrivals), pos, state);
         }
 
 

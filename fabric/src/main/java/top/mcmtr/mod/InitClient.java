@@ -143,12 +143,12 @@ public class InitClient {
         REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.STANDING_SIGN, argument -> new RenderCustomText<>(argument, 3, 8F, 14.5F, 7.01F, 15F, 11F, true, 2F, 3.1F, 6.2F, 0.004F, 0xFFFFFF, 0x000000, 0x000000));
         REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.STANDING_SIGN_1, argument -> new RenderCustomText<>(argument, 1, 2.5F, 9.25F, 7.65F, 4F, 11F, true, 1.6F, 1.6F, 3.2F, 0.0625F, 0xFFFFFF));
 
-        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YUUNI_PIDS, argument -> new RenderPIDS<>(argument, 2.5F, 7.5F, 6F, 6.5F, 27, true, 1.25F));
-        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YUUNI_2_PIDS, argument -> new RenderPIDS<>(argument, 4F, 7.5F, 5.9F, 2.5F, 24, true, 1F));
-        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YAMANOTE_4_PIDS, argument -> new RenderPIDS<>(argument, 0F, 15F, 7F, 6F, 32, true, 1F));
-        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YAMANOTE_5_PIDS, argument -> new RenderPIDS<>(argument, -4F, 15F, 7F, 6F, 40, true, 1F));
-        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YAMANOTE_6_PIDS, argument -> new RenderPIDS<>(argument, -8F, 15F, 7F, 6F, 48, true, 1F));
-        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YAMANOTE_7_PIDS, argument -> new RenderPIDS<>(argument, -12F, 15F, 7F, 6F, 56, true, 1F));
+        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YUUNI_PIDS, argument -> new RenderPIDS<>(argument, 2.5F, 7.5F, 6F, true));
+        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YUUNI_2_PIDS, argument -> new RenderPIDS<>(argument, 4F, 7.5F, 5.9F, true));
+        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YAMANOTE_4_PIDS, argument -> new RenderPIDS<>(argument, 0F, 15F, 7F, true));
+        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YAMANOTE_5_PIDS, argument -> new RenderPIDS<>(argument, -4F, 15F, 7F, true));
+        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YAMANOTE_6_PIDS, argument -> new RenderPIDS<>(argument, -8F, 15F, 7F, true));
+        REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.YAMANOTE_7_PIDS, argument -> new RenderPIDS<>(argument, -12F, 15F, 7F, true));
 
         REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.CATENARY_WITH_LONG, argument -> new RenderCatenaryModel<>(argument, BlockCatenaryWithModel.CatenaryModel.CATENARY_LONG));
         REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.CATENARY_WITH_LONG_TOP, argument -> new RenderCatenaryModel<>(argument, BlockCatenaryWithModel.CatenaryModel.CATENARY_LONG_TOP));

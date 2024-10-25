@@ -12,7 +12,7 @@ public final class BlockYamanotePIDS extends BlockPIDSHorizontalBase {
     private final int length;
 
     public BlockYamanotePIDS(int length) {
-        super(MAX_ARRIVALS);
+        super(MAX_ARRIVALS, "ui.msd.pids_yamanote");
         this.length = length;
     }
 
@@ -57,7 +57,7 @@ public final class BlockYamanotePIDS extends BlockPIDSHorizontalBase {
     public static class BlockYamanotePIDSEntity extends BlockEntityHorizontalBase {
 
         public BlockYamanotePIDSEntity(int length, BlockPos pos, BlockState state) {
-            super(MAX_ARRIVALS, getEntity(length), pos, state);
+            super(MAX_ARRIVALS, "", getEntity(length), pos, state);
         }
 
         public static BlockEntityType<? extends BlockEntityExtension> getEntity(int length) {
